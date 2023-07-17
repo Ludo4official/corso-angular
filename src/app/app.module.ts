@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { TerzaProvaComponent } from './terza-prova/terza-prova.component';
 
 
 
@@ -23,7 +24,8 @@ import { MatDividerModule } from '@angular/material/divider';
   declarations: [
     AppComponent,
     ProvaComponent,
-    SecondaProvaComponent
+    SecondaProvaComponent,
+    TerzaProvaComponent
   ],
   imports: [
     BrowserModule,
