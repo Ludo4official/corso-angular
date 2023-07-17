@@ -1,4 +1,4 @@
-.example-card {
+/* .example-card {
     max-width: 400px;
 }
 
@@ -32,4 +32,13 @@ section {
     display: flex;
     justify-content: center;
     width: 120px;
+} */
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
 }

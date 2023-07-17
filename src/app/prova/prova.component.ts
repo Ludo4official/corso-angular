@@ -13,7 +13,7 @@ export class ProvaComponent implements OnInit {
         {
             nome: 'Roger',
             razza: 'Golden',
-            descrizione: 'Descrizione cane'
+            descrizione: 'Descrizione cane generica'
         },
         {
             nome: 'Mario',
@@ -39,10 +39,31 @@ export class ProvaComponent implements OnInit {
 
     isDisabled = false;
 
+    pic = '';
+    dog1 = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Golden_retriever_stehfoto.jpg/1200px-Golden_retriever_stehfoto.jpg';
+    dog2 = 'https://cdn.britannica.com/07/234207-050-0037B589/English-bulldog-dog.jpg';
+
     ngOnInit(): void {
+        
         setInterval(() => {
-        this.isDisabled = !this.isDisabled
-        }, 2000)
-    }    
+            this.isDisabled = !this.isDisabled
+        }, 2000);
+
+
+        let counter = 0;
+
+        setInterval(() => {
+            if (counter%2 == 0) {
+            this.pic = this.dog1
+            } else {
+                this.pic = this.dog2
+            }
+            counter++;
+        },2000)
+
+    }
+    
+
+
 
 }
