@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 // import { MatButtonModule } from '@angular/material/button';
 // import { MatCardModule } from '@angular/material/card';
 
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './prova.component.html',
   styleUrls: ['./prova.component.css']
 })
-export class ProvaComponent {
+export class ProvaComponent implements OnInit {
 
     cani = [
         {
@@ -36,5 +36,13 @@ export class ProvaComponent {
             descrizione: 'Descrizione cane 5'
         }
     ]
+
+    isDisabled = false;
+
+    ngOnInit(): void {
+        setInterval(() => {
+        this.isDisabled = !this.isDisabled
+        }, 2000)
+    }    
 
 }
