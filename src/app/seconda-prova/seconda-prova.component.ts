@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SecondaProvaComponent {
 
+    onInput(event: Event) {
+        console.log( (<HTMLInputElement>event.target).value)
+    }
+
 }
