@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-6 mt-3">
             <form class="example-form">
                 <mat-form-field class="example-full-width">
                     <mat-label>Favorite food</mat-label>
@@ -8,5 +8,16 @@
                 </mat-form-field>
             </form>
         </div>
+        <div class="col-6 mt-3">
+            <button mat-raised-button color="warn" (click)="onClick($event)">Warn</button>
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Favorite food</mat-label>
+                    <input matInput placeholder="Ex. Pizza" [(ngModel)]="title">
+                </mat-form-field>
+            </form>
+            <div>{{ title }}</div>
+        </div>
     </div>
 </div>
+

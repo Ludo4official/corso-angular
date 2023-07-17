@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class SecondaProvaComponent {
 
+    title = 'input prova';
+
     onInput(event: Event) {
-        console.log( (<HTMLInputElement>event.target).value)
+        console.log((<HTMLInputElement>event.target).value);
+        this.title = (<HTMLInputElement>event.target).value;
+    }
+
+    onClick(event: Event) {
+        this.title = 'cliccato';
     }
 
 }
