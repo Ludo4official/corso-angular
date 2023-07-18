@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class TerzaProvaComponent {
 
     counter = 0;
-    variabile = false;
+    variabile = true;
 
     // setInterval(() => {
     //     if (counter % 2 == 0) {

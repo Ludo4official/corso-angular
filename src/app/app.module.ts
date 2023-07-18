@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { TerzaProvaComponent } from './terza-prova/terza-prova.component';
+import { QuartaProvaComponent } from './quarta-prova/quarta-prova.component';
 
 
 
@@ -25,7 +26,8 @@ import { TerzaProvaComponent } from './terza-prova/terza-prova.component';
     AppComponent,
     ProvaComponent,
     SecondaProvaComponent,
-    TerzaProvaComponent
+    TerzaProvaComponent,
+    QuartaProvaComponent
   ],
   imports: [
     BrowserModule,
